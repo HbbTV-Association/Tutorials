@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//HbbTV//1.1.1//EN" "http://www.hbbtv.org/dtd/HbbTV-1.1.1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>video/broadcast object demo app</title>
+    <meta http-equiv="Content-Type" content="application/vnd.hbbtv.xml+xhtml; utf-8" />
+    <link rel="stylesheet" href="broadcast-object.css" />
+    <script type="text/javascript" src="broadcast-object.js"></script>
+</head>
+
+<body onload="start();">
+    <div>
+        <object type="application/oipfApplicationManager" id="applicationManager"> </object>
+        <!-- this is our video/broadcast object -->
+        <object type="video/broadcast" id="broadcastVideo"> </object>
+    </div>
+    <!-- we shall define a safe area within the body -->
+    <div class="safe_area" id="app_area">
+        <!-- status display fields and channel list -->
+        <div class="status_text">video/broadcast object initialization: <span id="inititalization_field">waiting...</span></div>
+        <div class="status_text">video/broadcast object playState: <span id="playState_field">acquiring...</span></div>
+        <div class="status_text">video/broadcast object currentChannel: <span id="currentChannel_field">acquiring...</span></div>
+        <ul class="channel_list_general" id="channelList_field">
+            <li class="channel_list_header">Obtained channel list (may be truncated):</li>
+        </ul>
+    </div>
+</body>
+</html>
