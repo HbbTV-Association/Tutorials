@@ -247,7 +247,7 @@ function handleKeyCode(kc) {
                 scene.lastNumericButtonPressed = '9';
                 break;
             default:
-                console.log('Unhandled keycode : ' + kc);
+                // pressed unhandled key
                 shouldRender = false;
         }
         if (shouldRender) {
@@ -256,7 +256,7 @@ function handleKeyCode(kc) {
         }
     }
     catch (e) {
-        console.error('handleKeyCode error' + e);
+        // pressed unhandled key, catch the error
     }
     // we return true to prevent default action for processed keys
     return true;
@@ -271,7 +271,7 @@ function start()
         var appObject = appManager.getOwnerApplication(document);
         // check if Application object was a success
         if (appObject === null) {
-            console.error('Error acquiring the Application object!');
+            // error acquiring the Application object!
         } 
         else {
             // we have the Application object, and we can initialize the scene and show our app
@@ -280,7 +280,6 @@ function start()
         }
     }
     catch (e) {
-        // this is not an HbbTV client, log the error to console
-        console.error('Not a HbbTV client!');
+        // this is not an HbbTV client, catch the error.
     }
 }

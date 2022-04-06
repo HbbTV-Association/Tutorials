@@ -106,8 +106,7 @@ var rcUtils = {
                 app.private.keyset.setValue(mask);
             }
             catch (ee) {
-                // problem occured
-                console.error('Error setting keyset value: ' + ee);
+                // catch the error while setting keyset value 
             }
         }
     },

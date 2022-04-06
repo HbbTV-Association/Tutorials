@@ -55,7 +55,7 @@ function start()
         var appObject = appManager.getOwnerApplication(document);
         // check if Application object was a success
         if (appObject === null) {
-            console.error('Error acquiring the Application object!');
+            // error acquiring the Application object!
         } 
         else {
             var i, li, availableChannels;
@@ -85,7 +85,7 @@ function start()
                     }
                 }
                 catch (channelError) {
-                    console.error('channel_error: ' + channelError);
+                    // channel error occurred
                     li = document.createElement('li');
                     li.innerHTML = 'channel_error: ' + channelError;
                     document.getElementById('channelList_field').appendChild(li);
@@ -100,7 +100,6 @@ function start()
         }
     }
     catch (e) {
-        // this is not an HbbTV client, log the error to console
-        console.error('Not a HbbTV client!');
+        // this is not an HbbTV client, catch the error.
     }
 }

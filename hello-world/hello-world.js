@@ -7,7 +7,7 @@ function sayHello()
         var appObject = appManager.getOwnerApplication(document);
         // check if Application object was a success
         if (appObject === null) {
-            console.error('Error acquiring the Application object!');
+            // error acquiring the Application object!
         } 
         else {
             // we have the Application object, and we can show our app
@@ -15,8 +15,7 @@ function sayHello()
         }
     }
     catch (e) {
-        // this is not an HbbTV client, log the error to console
-        console.error('Not a HbbTV client!');
+        // this is not an HbbTV client, catch the error.
     }
 
 }
