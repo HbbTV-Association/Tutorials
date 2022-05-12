@@ -1,0 +1,36 @@
+.logger {
+  position: absolute;
+  left: 488px;
+  top: 36px;
+  width: 640px;
+  height: 624px;
+
+  background: white;
+  padding: 12px;
+  display: none;
+  color: black;
+}
+
+.logger p {
+  margin: 0;
+}
+
+.logger .verbose {
+  color: gray;
+}
+
+.logger .debug {
+  color: black;
+}
+
+.logger .info {
+  color: green;
+}
+
+.logger .warn {
+  color: orange;
+}
+
+.logger .error {
+  color: red;
+}

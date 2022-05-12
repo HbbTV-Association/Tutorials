@@ -1,0 +1,42 @@
+body {
+  background-color: transparent;
+  width: 1280px;
+  height: 720px;
+  overflow: hidden;
+}
+
+object#applicationManager {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 0px;
+  height: 0px;
+}
+
+#app {
+  position: absolute;
+  left: 128px;
+  top: 36px;
+  width: 1024px;
+  height: 648px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+ul {
+  list-style-type: none;
+  width: 30%;
+  font-size: 14px;
+}
+
+li {
+  padding: 12px 16px;
+  background-color: white;
+  color: black;
+  border: solid 1px black;
+  margin: 12px 16px;
+}
+
+li.focus {
+  background-color: black;
+  color: white;
+}
