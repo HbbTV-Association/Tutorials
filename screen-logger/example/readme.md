@@ -1,6 +1,6 @@
 # Basic Screen Logger - Sample App
 
-This App showcases the features of the [Basic Screen Logger](../readme.md). If you have a recent version of Node.js installed on your machine you can serve the from that machine by running the following command from the repositories root directory:
+This App showcases the features of the [Basic Screen Logger](../readme.md). If you have a recent version of Node.js installed on your machine you can serve this app by running the following command from the repositories root directory:
 
 ```bash
 npx http-server --mimetypes screen-logger/example/.types
