@@ -86,9 +86,8 @@
     }
   };
 
-  Logger.prototype.__writeLine = function () {
-    var message = this.tag + stringifyArguments.apply(null, arguments);
-    return Console.createLogLine(message);
+  Logger.prototype.__writeLine = function (message) {
+    return Console.createLogLine(this.tag + message);
   };
 
   Logger.prototype.log = function () {
