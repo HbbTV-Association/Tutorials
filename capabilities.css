@@ -1,0 +1,93 @@
+/* general settings related to Hbb */
+body 
+{
+    /* transparent background */
+    background-color: transparent;
+    /* we explicitly set the size of the body element */
+    width: 1280px;
+    height: 720px;
+    overflow: hidden;
+}
+#keyBox {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 15px;
+    font-size: 16px;
+    font-family: sans-serif;
+    width: 200px;
+    text-align: center;
+    white-space: pre-line;
+}
+
+/** application/oipfApplicationManager embedded object style  */
+object#applicationManager
+{
+    position: absolute;
+    left: 0px;
+    top: 0px; 
+    width: 0px; 
+    height: 0px;
+}
+object#capabilities
+{
+    position: absolute;
+    left: 0px;
+    top: 0px; 
+    width: 0px; 
+    height: 0px;
+}
+object#configuration
+{
+    position: absolute;
+    left: 0px;
+    top: 0px; 
+    width: 0px; 
+    height: 0px;
+}
+object#mediaSwitcher
+{
+    position: absolute;
+    left: 0px;
+    top: 0px; 
+    width: 0px; 
+    height: 0px;
+}
+
+
+/** safe area as recommended by standard */
+div.safe_area 
+{
+    position: absolute;
+    left: 64px; 
+    top: 18px; 
+    width: 1152px; 
+    height: 684px;
+    font-family: sans-serif;
+    /** set background color and alpha */
+    background-color: rgba(0, 0, 0, .5);
+}
+
+/* set text style */
+div.center {
+  padding: 1px 0;
+}
+.scrollable {
+    width: 90%;            /* Adjust width as needed */
+    height: 500px;         /* Set desired height */
+    overflow-y: hidden;    /* Initially hidden for scroll control */
+    margin: 20px auto;     /* Center the text box */
+    padding: 10px;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 15px;
+    color: white;
+    font-size: 12px;
+    text-align: left;
+    background-color: rgba(255, 0, 0, .5);
+    font-family: sans-serif;
+}

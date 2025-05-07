@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//HbbTV//1.1.1//EN" "http://www.hbbtv.org/dtd/HbbTV-1.1.1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Capabilities app</title>
+    <meta http-equiv="Content-Type" content="application/vnd.hbbtv.xhtml+xml; utf-8" />
+    <link rel="stylesheet" href="capabilities.css" />
+    <script type="text/javascript" src="capabilities.js"></script>
+</head>
+
+<body onload="appInit();">
+    
+    <div>
+        <object type="application/oipfApplicationManager" id="applicationManager"> </object>
+        <object type="application/oipfCapabilities" id="capabilities"></object>
+        <object type="application/oipfConfiguration" id="configuration"></object>
+        <object type="application/hbbtvMediaSwitcher" id="mediaSwitcher"></object>
+    </div>
+    <!-- we shall define a safe area within the body -->
+    <div class="safe_area" id="app_area">
+        <div id="keyBox">Press a key</div>
+        <h1 style="color: white">Capabilities Test Application</h1>
+        <!-- here we show the message -->
+        <div id= "textBox" class="scrollable">
+            <h2>Version</h2>
+            <p id="hbbtv-version">Loading...</p>
+            <h2>Keyset</h2>
+            <p id="keyset-field">Checking keyset...</p>
+            <h2>Capabilities</h2>
+            <p id="capabilities-field">Checking capabilities...</p>
+            <h2>Configuration</h2>
+            <p id="configuration-field">Checking configuration...</p>
+            <h2>Destinctive Identifier</h2>
+            <p id="identifier-field">Checking identifier...</p>
+            <h2>Debug</h2>
+            <p id="debug-test">Checking debug...</p>
+            <h2>Media Switcher</h2>
+            <p id="media-switcher">Checking media switcher...</p>
+            <h2>Capabilities XML</h2>
+            <p id="capabilities-xml">Checking capabilities...</p>
+
+        </div>
+    </div>
+</body>
+</html>
