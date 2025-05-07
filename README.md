@@ -19,3 +19,7 @@ A demonstration of the interaction of HbbTV applications with the remote control
 [Code](https://github.com/HbbTV-Association/Tutorials/blob/main/rc-interaction/) |
 [Tutorial](https://developer.hbbtv.org/guide/getting-started/interaction-with-the-remote-control/)
 
+### Screen Logger ###
+A basic screen logger contributed by Christoph Ziegler working at “ARD Programmdirektion. It enables logging of output onto the screen, with control over the size and position of the logger and the level of debug shown. \
+[Code](https://github.com/HbbTV-Association/Tutorials/blob/main/screen-logger/) |
+[Tutorial](https://developer.hbbtv.org/guide/getting-started/basic-screen-logger/)
