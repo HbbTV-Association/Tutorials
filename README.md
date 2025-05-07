@@ -2,7 +2,7 @@
 
 This is the code repository for HbbTV Developer Portal Tutorials
 
-### Contents ###
+## Contents ##
 
 ### Hello World ###
 A minimal HbbTV application that aims to be compatible across a widest range of terminals that displays a Hello world! message on screen. \
@@ -23,3 +23,8 @@ A demonstration of the interaction of HbbTV applications with the remote control
 A basic screen logger contributed by Christoph Ziegler working at “ARD Programmdirektion. It enables logging of output onto the screen, with control over the size and position of the logger and the level of debug shown. \
 [Code](https://github.com/HbbTV-Association/Tutorials/blob/main/screen-logger/) |
 [Tutorial](https://developer.hbbtv.org/guide/getting-started/basic-screen-logger/)
+
+### Capabilities ###
+A HbbTV application demonstrating the capailities and configuration APIs. \
+[Code](https://github.com/HbbTV-Association/Tutorials/blob/main/capabilities/) |
+[Tutorial](https://developer.hbbtv.org/guide/getting-started/device-capabilities-and-configuration/)
